@@ -21,3 +21,26 @@ Hello!! so for today i didn't do much, i just search for the parts schematics on
 ![components](Day2.png)
 
 **Total time spent: 1 hours**
+
+# Octobre 20: Prototype hardware progress
+
+Hello!! time to get back to the project. I already have the Raspberry Pi, microphone and speaker, so the project is starting to feel more real now.
+
+The Raspberry Pi Zero 2 W is still the main computer of Redstone AI. I tested the INMP441 microphone and managed to get audio input working, but the microphone is still quite quiet and needs some improvement. I also started looking more carefully at the other hardware I may need, especially the touchscreen, camera for hand gestures, audio amplifier, battery and power management.
+
+I also started thinking about how to divide the work between the Raspberry Pi, my laptop and online services. The idea is to avoid making the Pi Zero 2 W do absolutely everything when some tasks can run elsewhere.
+
+**Total time spent: not recorded**
+
+# Octobre 23–25: Functional analysis
+
+For these days, I focused more on the project documentation and understanding what Redstone AI is supposed to do before going deeper into the technical implementation.
+
+I worked on the functional analysis in French, including the *bête à cornes*, the *diagramme pieuvre* and the table of service functions with their criteria and levels. I also worked on organizing the presentation: the problem, the objectives and the way the system should help people who struggle with everyday tasks.
+
+The main idea is still simple: people often need too many different devices to accomplish one task, and Redstone AI aims to make those interactions easier through one intelligent assistant.
+
+This part was mostly about defining the project clearly, not claiming that every planned feature is already implemented.
+
+**Total time spent: not recorded**
+
