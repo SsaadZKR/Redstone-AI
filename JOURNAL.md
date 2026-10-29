@@ -30,7 +30,7 @@ The Raspberry Pi Zero 2 W is still the main computer of Redstone AI. I tested th
 
 I also started thinking about how to divide the work between the Raspberry Pi, my laptop and online services. The idea is to avoid making the Pi Zero 2 W do absolutely everything when some tasks can run elsewhere.
 
-**Total time spent: not recorded**
+**Total time spent: 2 hours**
 
 # Octobre 23–25: Functional analysis
 
@@ -42,5 +42,5 @@ The main idea is still simple: people often need too many different devices to a
 
 This part was mostly about defining the project clearly, not claiming that every planned feature is already implemented.
 
-**Total time spent: not recorded**
+**Total time spent: 5 hours**
 
