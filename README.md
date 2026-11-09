@@ -1,6 +1,6 @@
 <div align="center">
 
-![Redstone Core](assets/redstone-core.svg)
+![Redstone AI](assets/redstone-core.svg)
 
 # REDSTONE AI
 
@@ -8,100 +8,89 @@
 
 **An interactive AI companion built to make everyday technology feel simpler, more natural and more accessible.**
 
-[![Status](https://img.shields.io/badge/BUILD-IN_PROGRESS-c45b42?style=for-the-badge)](JOURNAL.md)
-[![Platform](https://img.shields.io/badge/MAIN_BLOCK-Raspberry_Pi_Zero_2_W-3b8b58?style=for-the-badge&logo=raspberrypi&logoColor=white)](JOURNAL.md)
-[![Made in Morocco](https://img.shields.io/badge/CRAFTED-IN_MOROCCO-397b63?style=for-the-badge)](JOURNAL.md)
+[![Status](https://img.shields.io/badge/BUILD-IN_PROGRESS-c45b42?style=for-the-badge)](#current-focus)
+[![Platform](https://img.shields.io/badge/MAIN_BLOCK-Raspberry_Pi_Zero_2_W-3b8b58?style=for-the-badge&logo=raspberrypi&logoColor=white)](#the-workshop)
+[![Made in Morocco](https://img.shields.io/badge/CRAFTED-IN_MOROCCO-397b63?style=for-the-badge)](#the-builder)
 
-**[Enter the Workshop](#-the-workshop) · [Explore the Redstone Network](#-the-redstone-network) · [Read the Quest Log](JOURNAL.md)**
+**[The idea](#the-idea) · [The workshop](#the-workshop) · [How it works](#how-it-works) · [Current focus](#current-focus)**
 
 </div>
 
 ---
 
-> [!TIP]
-> **Your mission:** bring different ways of interacting with technology into one helpful companion. Less switching between devices. More getting things done.
+> **The goal:** bring different ways of interacting with technology into one helpful companion. Less switching between devices. More getting things done.
 
-## ⛏️ The world we're trying to improve
+## The idea
 
 A simple task can sometimes require several devices, apps and interfaces. That can be frustrating for anyone, especially people who find conventional interfaces difficult to use.
 
-**Redstone AI is an experiment in making those interactions simpler.** The idea is one compact assistant that can bring together voice, touch and other natural ways of communicating with technology.
+**Redstone AI explores a simpler approach:** one compact assistant that brings together voice, touch and other natural ways of interacting with technology.
 
-This is not a finished product yet. We're building, testing and learning one block at a time.
+It is an ongoing student engineering project. The prototype is being built and tested step by step; planned features are not presented as finished ones.
 
-## 🧰 The Workshop
+## The workshop
 
-Here's the current build. Think of each component as a block with its own job.
+Here's the current hardware direction. Each component has its own job.
 
-| Block | Its ability | Build status |
+| Component | Purpose | Status |
 |---|---|---|
-| **Raspberry Pi Zero 2 W** | The central brain of the device | Acquired |
-| **INMP441 microphone** | Listens for voice input | Tested — capture works; sensitivity needs improvement |
-| **Speaker** | Gives audio feedback | Acquired — integration in progress |
-| **Audio amplifier** | Powers the speaker properly | To integrate |
-| **5-inch touchscreen** | Gives the assistant a visual, touch interface | Planned |
-| **Camera** | Lets us explore hand-gesture interaction | Planned |
-| **Battery + power system** | Makes the build portable | Under consideration |
+| **Raspberry Pi Zero 2 W** | Main computer of the device | Acquired |
+| **INMP441 microphone** | Captures voice input | Tested — audio capture works; sensitivity needs improvement |
+| **Speaker** | Audio feedback | Acquired — integration in progress |
+| **Audio amplifier** | Drives the speaker | To integrate |
+| **5-inch touchscreen** | Visual and touch interface | Planned |
+| **Camera** | Experiments with hand gestures | Planned |
+| **Battery and power system** | Portable operation | Under consideration |
 
-The inventory can change as the prototype develops. No planned feature is being presented as completed.
+The component list may change as the prototype develops.
 
-## 🔴 The Redstone Network
+## How it works
 
-The device is designed as a team of parts, not one magic block.
+Redstone AI is designed as a system of connected parts, not one magic component.
 
 ```text
              [ USER ]
-          voice / touch / gestures
+       voice / touch / gestures
                   |
                   v
         +---------------------+
         |     REDSTONE AI     |
         |                     |
-        |  [Microphone]       |
-        |  [Touchscreen]      |
-        |  [Camera - planned] |
+        |  Microphone         |
+        |  Touchscreen        |
+        |  Camera (planned)   |
         +----------+----------+
                    |
                    v
         +---------------------+
         | Raspberry Pi Zero 2W|
-        |  Main device brain  |
+        |    Main computer    |
         +----+-----------+----+
              |           |
              v           v
         [ Speaker ]   [ Laptop ]
-        audio out     development /
+        audio output  development /
                       heavier local work
 
-             . . . . . . . .
-             Optional online services
-             when network access helps
+          Optional online services
+          when network access helps
 ```
-
-**The computing strategy**
 
 - **Raspberry Pi:** device-side interaction, audio hardware and lightweight control.
 - **Laptop:** development, testing and potentially heavier local processing.
 - **Online services:** optional capabilities that may benefit from network access.
 
-The final division of work is still being evaluated. The goal is to keep the experience responsive without asking the Pi Zero 2 W to do absolutely everything.
+The final division of work is still being evaluated. The aim is to keep the experience responsive without asking the Pi Zero 2 W to do everything.
 
-## 📦 Crafting recipes
+## Design principles
 
-A few of the combinations we're working towards:
+- **Keep it simple:** everyday interactions should not require a pile of separate devices.
+- **Make it accessible:** explore voice, touch and gesture-based ways to interact.
+- **Build what can be tested:** distinguish working hardware from planned ideas.
+- **Use the right computer for the job:** keep lightweight tasks on the device and evaluate other processing options when needed.
+- **Improve through real tests:** prototype, measure what works, and adjust what does not.
 
-| Recipe | Ingredients | Result |
-|---|---|---|
-| Voice input | INMP441 + Raspberry Pi | Audio captured for processing |
-| Spoken feedback | Raspberry Pi + amplifier + speaker | Audio response from the device |
-| Touch interaction | Touchscreen + interface software | A visual way to control the assistant |
-| Gesture experiments | Camera + recognition software | Explore hands-free interaction |
-
-These are design recipes, not claims that every combination is already working.
-
-## 🗺️ Quest Log
-
-Every good world starts with a few quests.
+## Current focus
 
 - [x] Choose the initial hardware direction.
 - [x] Acquire the Raspberry Pi Zero 2 W, microphone and speaker.
@@ -113,29 +102,23 @@ Every good world starts with a few quests.
 - [ ] Explore camera-based hand gestures.
 - [ ] Design and build the portable enclosure.
 - [ ] Develop and test the interaction software.
-- [ ] Bring the hardware and software together into a working prototype.
+- [ ] Combine the hardware and software into a working prototype.
 
 <details>
-<summary><b>🧪 Current build notes</b></summary>
+<summary><b>Prototype notes</b></summary>
 
 - The INMP441 microphone captures audio, but its input is currently quiet.
 - The speaker has been acquired; the amplifier and audio integration still need work.
 - The touchscreen and camera are planned components.
-- The project is exploring a split-computing approach to keep the Raspberry Pi's workload realistic.
+- A split-computing approach is being explored to keep the Raspberry Pi's workload realistic.
 
 </details>
 
-## 📜 The Journal
-
-The workshop has a journal. It records decisions, experiments, progress and problems — including the bits that don't work on the first try.
-
-**[Open the development journal →](JOURNAL.md)**
-
-## 🧑‍🔧 The builder
+## The builder
 
 Redstone AI is an independent student engineering project by **Saad Zakaria**, developed in Morocco.
 
-Built around curiosity for artificial intelligence, embedded systems, electronics and practical problem-solving.
+The project brings together interests in artificial intelligence, embedded systems, electronics and practical problem-solving.
 
 ---
 
@@ -144,7 +127,5 @@ Built around curiosity for artificial intelligence, embedded systems, electronic
 ### ONE BLOCK AT A TIME.
 
 *Plan it. Build it. Test it. Improve it.*
-
-[![Project Journal](https://img.shields.io/badge/OPEN-THE_JOURNAL-9a4938?style=for-the-badge)](JOURNAL.md)
 
 </div>
